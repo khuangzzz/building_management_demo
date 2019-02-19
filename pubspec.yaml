@@ -19,6 +19,7 @@ environment:
 dependencies:
   protobuf: ^0.13.3
   camera: ^0.4.0
+  http: ^0.12.0
   flutter:
     sdk: flutter
 
