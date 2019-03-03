@@ -14,8 +14,7 @@ class LoginRequest extends $pb.GeneratedMessage {
   static final $pb.BuilderInfo _i = new $pb.BuilderInfo('LoginRequest', package: const $pb.PackageName('smartbuilding.v1'))
     ..aOS(1, 'email')
     ..aOS(2, 'password')
-    ..aOS(3, 'clientDeviceId')
-    ..pPS(4, 'abc')
+    ..aOS(3, 'userLocation')
     ..hasRequiredFields = false
   ;
 
@@ -44,12 +43,10 @@ class LoginRequest extends $pb.GeneratedMessage {
   bool hasPassword() => $_has(1);
   void clearPassword() => clearField(2);
 
-  String get clientDeviceId => $_getS(2, '');
-  set clientDeviceId(String v) { $_setString(2, v); }
-  bool hasClientDeviceId() => $_has(2);
-  void clearClientDeviceId() => clearField(3);
-
-  List<String> get abc => $_getList(3);
+  String get userLocation => $_getS(2, '');
+  set userLocation(String v) { $_setString(2, v); }
+  bool hasUserLocation() => $_has(2);
+  void clearUserLocation() => clearField(3);
 }
 
 class LoginResponse extends $pb.GeneratedMessage {
